@@ -2,12 +2,22 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-
  struct steper{
   int stepPin;
   int  dirPin;
   int passos;
 };
+
+
+struct val
+{
+  int F;
+  int E;
+};
+
+char	**ft_split(char const *s, char c);
+
+
 
 void configurarMotor(steper* motor, int stepPin, int dirPin);
 /**
